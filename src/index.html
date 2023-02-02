@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+<head>
+  <meta charset="utf-8">
+  <div class="pagar">
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>
+      <div class="vc"><img src="https://ventanasabiertascom.files.wordpress.com/2022/10/ventanas-abiertas-2.png?w=150"
+          alt="Ventanas abiertas" class="max"></div>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div class="vc"><img src="https://ventanasabiertascom.files.wordpress.com/2022/10/venta-de-cochera.png?w=400"
+          alt="Venta de cochera" class="max"></div>
+      <br><br><br><br><br><br><br><br><br><br>
+      <title>Validación de tarjeta de crédito</title>
+      <br>
+      <h1>Pago con tarjeta de crédito</h1>
+    </header>
+    <form>
+      <label for="cardnumber">Introduce el número de tu tarjeta:</label>
+      <input id="cardnumber" type="text" placeholder="Número de 16 dígitos"></input>
+      <br><br>
+          <div><button id="click" type="submit">Enviar</button></div>
+
+      <br>
+      <div>
+        Tu tarjeta: <span id="masked-card"></span>
+      </div>
+      <p id="introNumber"></p>
+      <p id="valida"></p>
+      <p id="invalida"></p>
+      
+    </form>
+    <p></p>
+    
+  <div id="result"></div>
+  
+  <script src="index.js" type="module"></script>
   </body>
+
 </html>
