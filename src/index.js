@@ -23,9 +23,19 @@ function validate() {
   else {
     const result = validator.isValid(cardNumber);
     if (result === true) {
-      document.getElementById("valida").innerHTML = "Tarjeta válida" + "<p></p>" + "¡Compra exitosa!";
+      document.getElementById("valida").innerHTML = "Tarjeta válida" + "<p></p>" + "Tu solicitud ha sido aprobada.";
       const maskedCard = validator.maskify(cardNumber);
-      document.getElementById("masked-card").innerHTML = maskedCard;
+    
+      let cardBrand = "";
+      
+      if (cardNumber.startsWith('51') || cardNumber.startsWith('52') || cardNumber.startsWith('53') || cardNumber.startsWith('54') || cardNumber.startsWith('55')) {
+        cardBrand = '<img src="https://i.imgur.com/pKfO5di.png"> ';
+      } else if (cardNumber.startsWith('4')) {
+        cardBrand = '<img src="https://i.imgur.com/Pu1tHHM.png"> ';
+      }
+    
+      document.getElementById("masked-card").innerHTML = cardBrand + maskedCard;
+      
     }
     else {
       document.getElementById("invalida").innerHTML = "Tarjeta inválida";

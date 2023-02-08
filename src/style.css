@@ -17,6 +17,13 @@ body {
     padding: 50px 0;
   } 
 
+  .container:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 .ventanasabiertas {
     width: 20%;
     max-width: 700px;
@@ -79,7 +86,7 @@ button:hover {
     color: #000000;
 }
 h1 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     border: 1px;
     border-radius: 7px;
@@ -94,7 +101,7 @@ h1 {
   }
   
   .top-stripe {
-    height: 20px;
+    height: 40px;
     width: 100%;
     background-color: #cadcc1;
     position: absolute;
@@ -103,7 +110,7 @@ h1 {
   }
   
   .bottom-stripe {
-    height: 20px;
+    height: 40px;
     width: 100%;
     background-color: #c1dcca;
     position: absolute;
@@ -116,9 +123,6 @@ h1 {
     position: relative;
     z-index: 2;
   }
-
-  .valida-invalida {
-    text-align: center;
-    font-size: 13 px;
-  }
+  
+  
   
