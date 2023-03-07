@@ -4,8 +4,8 @@ function validate() {
 
   const cardNumber = document.getElementById("cardnumber").value;
   const nombre = document.getElementById("name").value;
-
-  document.getElementById("introNumber").innerHTML = "";
+  const introNumber = document.getElementById("introNumber");
+  introNumber.innerHTML = "";
   document.getElementById("valida").innerHTML = "";
   document.getElementById("invalida").innerHTML = "";
   document.getElementById("masked-card").innerHTML = "";
