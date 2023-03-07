@@ -3,21 +3,21 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-}
-* {
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    overflow-x: auto;
-    }
-
-
-.container {
+    padding-top: 50px; /* añadimos un padding-top para evitar que los elementos se solapen con la banda superior */
+    padding-bottom: 50px; /* añadimos un padding-bottom para evitar que los elementos se solapen con la banda inferior */
+  }
+  
+  .container {
     width: 100%;
     max-width: 700px;
     margin: auto;
     text-align: center;
     padding: 50px 0;
-  } 
+    padding-top: 0; /* eliminamos el padding-top para que la clase no se solape con la banda superior */
+    padding-bottom: 0; /* eliminamos el padding-bottom para que la clase no se solape con la banda inferior */
+  }
+  
+  
 
   .container:after {
     content: "";
@@ -27,26 +27,30 @@ body {
 
 
 .ventanasabiertas {
-    width: 20%;
-    max-width: 700px;
+    width: 30%;
+    max-width: 200px; /* menor que la anchura máxima de .container */
     margin: auto;
     text-align: center;
     padding: 5px 0;
-}
-.ventadecochera {
-    width: 40%;
-    max-width: 700px;
+    display: block;
+  }
+  
+  .ventadecochera {
+    width: 50%;
+    max-width: 400px; /* menor que la anchura máxima de .container */
     margin: auto;
     text-align: center;
     padding: 50px 0;
-}
+    display: block;
+  }
+  
 
   
 header {
     text-align: center;
-    background-color: #ffffff;
     color: #000000;
     padding: 50px 0;
+    position: relative;
 }
 .pagar {
     font-size: 13px;
@@ -94,37 +98,33 @@ h1 {
     border-radius: 7px;
 }
 
-.element {
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    position: relative;
-    margin: 0;
-  }
+
   
   .top-stripe {
-    height: 40px;
+    height: 50px;
     width: 100%;
-    background-color: #cadcc1;
-    position: absolute;
+    background-color: #c1dcca;
+    position: fixed;
     top: 0;
-    z-index: 1;
+    left: 0;
+    z-index: 9999;
+    
   }
   
   .bottom-stripe {
-    height: 40px;
+    height: 50px;
     width: 100%;
     background-color: #c1dcca;
     position: fixed;
     bottom: 0;
-    z-index: 1;
-  }
+    left:0;
+    z-index: 9999;
+     }
   
   .content {
     padding: 10px;
     position: relative;
-    z-index: 2;
-  }
+    }
   
   
   

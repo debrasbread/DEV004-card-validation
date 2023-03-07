@@ -5,62 +5,47 @@
     <title>Venta de cochera - Pagar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <script src="index.js" type="module"></script>
-
-    <body class="element">
+    <main class="element">
       <div class="top-stripe"></div>
-      <div class="content">
-        <div class="container">
-          <header>
-            <div>
-              <img
-                src="https://ventanasabiertascom.files.wordpress.com/2022/10/ventanas-abiertas-2.png?w=150"
-                alt="Ventanas abiertas"
-                class="ventanasabiertas"
-              />
-            </div>
-            <div>
-              <img
-                src="https://ventanasabiertascom.files.wordpress.com/2022/10/venta-de-cochera.png?w=400"
-                alt="Venta de cochera"
-                class="ventadecochera"
-              />
-            </div>
-            <main>
-            <h1>Pago con tarjeta de crédito</h1>
+      <div class="content container">
+        <header>
+          <img
+            src="https://ventanasabiertascom.files.wordpress.com/2022/10/ventanas-abiertas-2.png?w=150"
+            alt="Ventanas abiertas"
+            class="ventanasabiertas"
+          />
+          <img
+            src="https://ventanasabiertascom.files.wordpress.com/2022/10/venta-de-cochera.png?w=400"
+            alt="Venta de cochera"
+            class="ventadecochera"
+          />
+          <h1>Pago con tarjeta de crédito</h1>
+          <p>Total: $300.00</p>
+        </header>
 
-            <p>Total: $300.00</p>
-          </header>
+        <label for="name">Nombre completo:</label>
+        <input id="name" type="text" placeholder="Nombre/s y apellido/s" />
+        <p id="introName"></p>
 
-          <label for="name">Nombre completo:</label>
-          <input id="name" type="text" placeholder="Nombre/s y apellido/s" />
-          <p id="introName"></p>
+        <label for="cardnumber">Número de tarjeta:</label>
+        <input id="cardnumber" type="text" placeholder="Número de 16 dígitos" />
+        <p id="introNumber"></p>
 
-          <label for="cardnumber">Número de tarjeta:</label>
-          <input
-            id="cardnumber"
-            type="text"
-            placeholder="Número de 16 dígitos"/>
-          <p id="introNumber"></p>
+        <button id="click" type="submit">Enviar</button>
 
-          <button id="click" type="submit">Enviar</button>
+        <br />
 
-          <br/>
+        <span id="masked-card"></span>
 
-        </main>
+        <p id="valida"></p>
 
-          <span id="masked-card"></span>
+        <p id="invalida"></p>
 
-          <p id="valida"></p>
-
-          <p id="invalida"></p>
-
-          <div id="result"></div>
-        </div>
+        <div id="result"></div>
       </div>
       <div class="bottom-stripe"></div>
-    </body>
+    </main>
   </body>
 </html>
