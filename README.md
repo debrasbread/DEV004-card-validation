@@ -19,7 +19,7 @@ Anunciar uno o hasta 10 artículos de segunda mano por $300.00 pesos mexicanos q
 
 ## Sobre la aplicación
 
-La estructura del sitio, su apariencia y las interacciones fueron diseñados en HTML, CSS y JavaScript, respectivamente.
+La estructura del sitio, su apariencia y las interacciones fueron diseñadas en HTML, CSS y JavaScript, respectivamente.
 
 La aplicación permite verificar si la tarjeta de crédito de un usuario es válida o no a través del objeto 'validator', cuyas propiedades son las funciones 'isValid' y 'maskify', descritas más adelante. La interfaz cuenta con algunos elementos identitarios, un título descriptivo, el monto a pagar y dos cajas de texto: una para que el usuario registre su nombre y su apellido (sólo admite letras, tildes y espacios) y otra para que introduzca el número de su tarjeta (sólo admite números, sin espacios), además de un botón que llama a las funciones de verificación.
 
