@@ -1,130 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 
 body {
-    font-family: 'Nunito', sans-serif;
-    padding-top: 50px; /* añadimos un padding-top para evitar que los elementos se solapen con la banda superior */
-    padding-bottom: 50px; /* añadimos un padding-bottom para evitar que los elementos se solapen con la banda inferior */
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-    padding: 50px 0;
-    padding-top: 0; /* eliminamos el padding-top para que la clase no se solape con la banda superior */
-    padding-bottom: 0; /* eliminamos el padding-bottom para que la clase no se solape con la banda inferior */
-  }
-  
-  
-
-  .container:after {
-    content: "";
-    clear: both;
-    display: table;
+  font-family: "Nunito", sans-serif;
 }
 
+.content-container {
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-.ventanasabiertas {
-    width: 30%;
-    max-width: 200px; /* menor que la anchura máxima de .container */
-    margin: auto;
-    text-align: center;
-    padding: 5px 0;
-    display: block;
-  }
-  
-  .ventadecochera {
-    width: 50%;
-    max-width: 400px; /* menor que la anchura máxima de .container */
-    margin: auto;
-    text-align: center;
-    padding: 50px 0;
-    display: block;
-  }
-  
+.container:after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  
+footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+}
+
+footer img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.ventadecochera {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: block;
+}
+
 header {
-    text-align: center;
-    color: #000000;
-    padding: 50px 0;
-    position: relative;
+  text-align: center;
+  color: #1e1d1d;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  position: relative;
 }
 .pagar {
-    font-size: 13px;
-    border: 0px solid #000000;
-    border-radius: 7px;
-    padding: 10px 0;
-    margin: 10px;
-    background-color: #ffffff;
-    text-align: center;
-    max-width: 700px;
-    margin: auto;
-    padding: 20px 0;
+  font-size: 13px;
+  border: 0px solid #1e1d1d;
+  border-radius: 7px;
+  padding: 10px 0;
+  margin: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px 0;
 }
 label {
-    font-size: 13px;
-    padding: 20px 0;
-    border-radius: 0px;
-    cursor: pointer;
-    border: 0px;
-    margin-bottom: 3px;
+  font-size: 13px;
+  padding: 20px 0;
+  border-radius: 0px;
+  cursor: pointer;
+  border: 0px;
+  margin-bottom: 3px;
 }
 label:hover {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 button {
-    font-size: 10px;
-    width: 15%;
-    display: block;
-    margin: auto;
-    padding: 10px 0;
-    background-color: #f5cca0;
-    border: none;
-    cursor: pointer;
-    border: 1px solid #000000;
-    border-radius: 7px;
+  font-size: 10px;
+  width: 8%;
+  display: block;
+  margin: auto;
+  padding: 10px 0;
+  background-color: #f5cca0;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #1e1d1d;
+  border-radius: 7px;
 }
 button:hover {
-    background-color: #f0b87c;
-    color: #000000;
+  background-color: #f0b87c;
+  color: #1e1d1d;
 }
 h1 {
-    font-size: 20px;
-    text-align: center;
-    border: 1px;
-    border-radius: 7px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px;
+  border-radius: 7px;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  border: 1px;
+  border-radius: 7px;
+  padding-bottom: 0;
+}
+
+.top-stripe {
+  height: 30px;
+  width: 100%;
+  background-color: #c1dcca;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 9999;
+}
+
+.bottom-stripe {
+  height: 30px;
+  width: 100%;
+  background-color: #c1dcca;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  z-index: 9999;
+}
+
+.content {
+  padding: 10px;
+  position: relative;
+}
+
+/* Para pantallas más grandes */
+@media screen and (min-width: 768px) {
+  .content-container {
+    max-width: 960px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
 }
 
 
-  
-  .top-stripe {
-    height: 50px;
-    width: 100%;
-    background-color: #c1dcca;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    
-  }
-  
-  .bottom-stripe {
-    height: 50px;
-    width: 100%;
-    background-color: #c1dcca;
-    position: fixed;
-    bottom: 0;
-    left:0;
-    z-index: 9999;
-     }
-  
-  .content {
-    padding: 10px;
-    position: relative;
-    }
-  
-  
-  

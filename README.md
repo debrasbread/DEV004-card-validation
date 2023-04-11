@@ -3,6 +3,11 @@
 ## Sobre Venta de cochera
 
 'Venta de cochera' es un marketplace al que pueden recurrir aquellas personas que no disponen de una cochera para vender los artículos que ya no usan. Ahí es posible anunciar, por $300.00 pesos mexicanos, hasta 10 objetos, cada uno acompañado de un relato biográfico, real o ficticio, que dé cuenta de la relevancia del artículo, tanto utilitaria como personal. Es decir, que la aplicación para validar tarjetas de crédito está dirigida, al menos por ahora, a vendedores y no a compradores.
+<br>
+
+![Venta de cochera](venta-de-cochera.png)
+
+<br>
 
 * Principales usuarios del producto:
 
@@ -29,5 +34,10 @@ La función 'isValid' toma el argumento 'cardNumber', que representa el número 
 
 La función 'maskify' oculta y reemplaza con numerales (#) los dígitos del número de la tarjeta, excepto los últimos cuatro, cuando la función 'isValid' ha determinado que es válido. De esta manera protege la información confidencial del usuario. Además muestra el logotipo de la franquicia emisora de la tarjeta: Visa o MasterCard.
 
+## Tests
 
+Para combrobar que las funciones más relevantes se comportan según lo previsto, se realizaron pruebas unitarias (tests) que evalúan su desempeño y nos permiten garantizar que no haya errores en su funcionamiento. También nos dejan saber qué porcentaje del código ha sido ejecutado por ellas.
 
+Como se aprecia en la imagen, todas las funciones pasaron las pruebas. Además éstas tienen una cobertura del 100% para sentencias (statements), 100% para ramas (branch), 100% para funciones (functions), y 100% para líneas (lines).
+
+![Pruebas unitarias](pruebas-unitarias.png)
