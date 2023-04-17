@@ -20,11 +20,11 @@ Anunciar uno o hasta 10 artículos de segunda mano por $300.00 pesos mexicanos q
 * Cómo resuelve sus problemas el producto:
 
 - Brinda a los usuarios (vendedores) un espacio del que antes no disponían para anunciar sus productos acompañados de un relato personal que añade valor al objeto y enriquece la experiencia de compraventa al volverla más significativa (no es una simple transacción).
-- El registro, que supone el pago del espacio para anunciar, es sencillo. Además, pagar con tarjeta en línea siempre será más fácil y práctico que cualquier otro método para servicios en línea.
+- El proceso de pago del espacio para anunciar es muy sencillo. Basta que el usuario introduzca su nombre y el número de su tarjeta de crédito o débito.
 
 ## Sobre la aplicación
 
-La estructura del sitio, su apariencia y las interacciones fueron diseñadas en HTML, CSS y JavaScript, respectivamente.
+La estructura del sitio, su apariencia y las interacciones fueron diseñadas con HTML, CSS y JavaScript, respectivamente. A grandes rasgos, consiste en una página responsiva con un formulario para el ingreso de datos.
 
 La aplicación permite verificar si la tarjeta de crédito de un usuario es válida o no a través del objeto 'validator', cuyas propiedades son las funciones 'isValid' y 'maskify', descritas más adelante. La interfaz cuenta con algunos elementos identitarios, un título descriptivo, el monto a pagar y dos cajas de texto: una para que el usuario registre su nombre y su apellido (sólo admite letras, tildes y espacios) y otra para que introduzca el número de su tarjeta (sólo admite números, sin espacios), además de un botón que llama a las funciones de verificación.
 

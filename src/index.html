@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de cochera - Pagar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de cochera · Pagar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,35 +13,34 @@
       <div class="content-container">
         <header>
           <img
-            src="https://ventanasabiertascom.files.wordpress.com/2022/10/venta-de-cochera.png?w=400"
-            alt="Venta de cochera"
-            class="ventadecochera"
+            src="../imágenes/logo-venta-de-cochera.png"
+            alt="Logotipo de Venta de cochera"
+            class="logoVentadecochera"
           />
-          <h1>Pago con tarjeta de crédito</h1>
+          <h1>Pago con tarjeta de crédito o débito</h1>
           <p>Total: $300.00</p>
         </header>
-
         <label for="name">Nombre completo:</label>
         <input id="name" type="text" placeholder="Nombre/s y apellido/s" />
         <p id="introName"></p>
-
         <label for="cardnumber">Número de tarjeta:</label>
         <input id="cardnumber" type="text" placeholder="Número de 16 dígitos" />
         <p id="introNumber"></p>
-
         <button id="click" type="submit">Enviar</button>
         <br />
-
         <span id="masked-card"></span>
-
         <p id="valida"></p>
-
         <p id="invalida"></p>
-
         <div id="result"></div>
       </div>
       <div class="bottom-stripe"></div>
     </main>
-    
+    <footer class="footer-container">
+      <img
+        src="../imágenes/logo-ventanas-abiertas.png"
+        alt="Logo Ventanas Abiertas"
+        class="logoVentanasabiertas"
+      />
+    </footer>
   </body>
 </html>

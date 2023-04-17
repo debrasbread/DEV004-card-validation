@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Nunito", sans-serif;
   box-sizing: border-box;
 }
 
@@ -10,26 +9,35 @@ body {
   height: 100%;
 }
 
+.top-stripe {
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  background-color: #c1dcca;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 9999;
+}
+
 .content-container {
   position: relative;
-  display: flex; /* Cambio de grid a flex */
-  flex-direction: column; /* Columna para que los elementos se muestren uno debajo del otro */
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   width: 100%;
   height: 100%;
   min-height: 100vh;
 }
 
-
-.ventadecochera {
-  max-width: 50%;
+.logoVentadecochera {
+  max-width: 40%;
   margin: auto;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -42,7 +50,7 @@ button {
   padding-bottom: 4px;
   background-color: #f5cca0;
   cursor: pointer;
-  border: .5px solid #282828;
+  border: 0.5px solid #282828;
   border-radius: 10px;
 }
 
@@ -56,7 +64,6 @@ h1 {
   text-align: center;
   border: 1px;
   border-radius: 10px;
-  max-width: 90%; /* Ancho máximo para evitar desbordamientos */
 }
 
 p {
@@ -64,35 +71,40 @@ p {
   text-align: center;
   border: 1px;
   border-radius: 10px;
-  max-width: 90%; /* Ancho máximo para evitar desbordamientos */
 }
 
 #label {
-  font-family: 'Poppins';
-  font-size: small;
+  font-family: "Nunito";
+  font-size: 13px;
   display: inline-block;
-  width: 150px; /* ajusta el ancho según tu preferencia */
-  text-align: right; /* para alinear el texto a la derecha del label */
-  margin-right: 10px; /* para agregar un poco de espacio entre el label y el input */
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 #input {
-  font-family: 'Poppins';
+  font-family: "Nunito";
   font-size: small;
   display: inline-block;
-  width: 200px; /* ajusta el ancho según tu preferencia */
+  width: 200px;
 }
 
+#masked-card {
+  padding-top: 10px;
+}
 
-.top-stripe {
-  position: fixed;
-  height: 30px;
-  width: 100%;
-  background-color: #c1dcca;
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: 9999;
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.logoVentanasabiertas {
+  max-width: 100px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 55px;
 }
 
 .bottom-stripe {
@@ -100,8 +112,9 @@ p {
   height: 30px;
   width: 100%;
   background-color: #c1dcca;
-  top: 0;
+  top: auto;
   bottom: 0;
   margin: 0;
+  left: 0;
   z-index: 9999;
-  }
+}
